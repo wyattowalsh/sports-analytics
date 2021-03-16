@@ -1,8 +1,0 @@
-name: sports-analytics
-channels:
-  - conda-forge
-  - defaults
-dependencies:
-  - numpy
-  - pandas
-  - nba_api
