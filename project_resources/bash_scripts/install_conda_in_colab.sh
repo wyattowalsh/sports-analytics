@@ -11,4 +11,4 @@ chmod +x $MINICONDA_INSTALLER_SCRIPT
 if [[ "$(which conda)" =~ "/usr/local/bin/conda" ]]; then
 	conda install --channel defaults conda python="$python_version" --yes
 	conda update --channel defaults --all --yes
-	python -c 'import sys; _ = (sys.path.append("/usr/local/lib/python3.6/site-packages"))'
+	python -c "import sys; _ = (sys.path.append("/usr/local/lib/python$python_version/site-packages"))"
