@@ -13,7 +13,6 @@ chmod +x $MINICONDA_INSTALLER_SCRIPT
 if [[ "$(which conda)" =~ "/usr/local/bin/conda" ]]; then
 	conda install --channel defaults conda python="$python_version" --yes
 	conda update --channel defaults --all --yes
-	conda init bash
 	python -c 'import sys; version = sys.version_info[0:2]; version = "{}.{}".format(version[0], version[1]); _ = (sys.path.append("/usr/local/lib/python{}/site-packages".format(version)))'
 else
 	echo "conda installation failed. Colab has changed since the authoring of this script."
