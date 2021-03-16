@@ -5,4 +5,5 @@ channels:
 dependencies:
   - numpy
   - pandas
-  - nba_api
+  - pip:
+    - nba_api
