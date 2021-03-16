@@ -1,5 +1,7 @@
 #!/bin/bash
 
+unset PYTHONPATH
+
 python_version = "$(python -c 'import sys; print(".".join(map(str, sys.version_info[:2])))')"
 
 MINICONDA_INSTALLER_SCRIPT=Miniconda3-4.5.4-Linux-x86_64.sh
