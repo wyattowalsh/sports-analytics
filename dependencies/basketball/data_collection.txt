@@ -1,4 +1,16 @@
+nbdime ### Utilities 
+pip
+python
+ipykernel
+nb_conda
+jupyter_contrib_nbextensions
+numpy
+pandas
+seaborn
+matplotlib
+yapf
+isort
 nba_api
 kaggle
-dask
 dask_cuda
+dask
