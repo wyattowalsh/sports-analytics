@@ -5,3 +5,14 @@ channels:
 dependencies:
   - nbdime ### Utilities 
   - pip
+  - python
+  - ipykernel
+  - nb_conda
+  - jupyter_contrib_nbextensions
+  - numpy
+  - pandas
+  - seaborn
+  - matplotlib
+  - yapf
+  - isort 
+

@@ -1,4 +1,2 @@
-numpy
-pandas
 nba_api
 kaggle
