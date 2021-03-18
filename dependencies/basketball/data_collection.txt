@@ -1,4 +1,4 @@
-nbdime ### Utilities 
+nbdime
 pip
 python
 ipykernel
