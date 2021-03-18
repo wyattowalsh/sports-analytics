@@ -1,9 +1,5 @@
-nbdime
 pip
-python
-ipykernel
-nb_conda
-jupyter_contrib_nbextensions
+python==3.7
 numpy
 pandas
 seaborn
@@ -12,5 +8,8 @@ yapf
 isort
 nba_api
 kaggle
+cudatoolkit=11.0
+cudf
 dask_cuda
+distributed
 dask
