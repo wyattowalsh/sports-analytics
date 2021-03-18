@@ -8,7 +8,7 @@ yapf
 isort
 nba_api
 kaggle
-cudatoolkit=11.0
+cudatoolkit==11.0
 cudf
 dask_cuda
 distributed
