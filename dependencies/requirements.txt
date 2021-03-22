@@ -10,3 +10,4 @@ seaborn
 matplotlib
 yapf
 isort
+pyngrok
