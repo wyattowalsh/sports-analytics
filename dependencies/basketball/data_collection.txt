@@ -1,14 +1,10 @@
 numpy
-ipywidgets
-bokeh
 pandas
 seaborn
 matplotlib
 yapf
 isort
 kaggle
-distributed
-dask
 pyngrok
 ipython-sql
 nba-api
