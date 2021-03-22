@@ -7,4 +7,5 @@ isort
 kaggle
 pyngrok
 ipython-sql
+swifter
 nba-api
