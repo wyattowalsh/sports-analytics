@@ -1,5 +1,4 @@
 pip
-python
 ipykernel
 nb_conda
 jupyter_contrib_nbextensions
