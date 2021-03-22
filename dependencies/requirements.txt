@@ -10,5 +10,3 @@ seaborn
 matplotlib
 yapf
 isort
-pyngrok
-nba_api
