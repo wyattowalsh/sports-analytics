@@ -1,9 +1,475 @@
 {
-  "licenses": [
+    "title": "Basketball Dataset",
+    "id": "wyattowalsh/basketball", 
+    "subtitle": "An ever-growing collection of basketball related data",
+    "description": "# ***Basketball Dataset***\n\n---\n\n## The ***Basketball Dataset*** is an attempt to assemble a `robust`, *organized* dataset that can grow to as ***large of a scale*** as possible, concentrated within the domain of basketball.\n\n---\n\n<img src=\"https://unsplash.com/photos/Kv-gAzpUSRg/download?force=true\">\n\n---\n\n## Contents\n\n## \n- [Overview 📖](#overview-📖)\n- [Motivation 🏆 🥇 💪 ](#motivation-🏆-🥇-💪)\n- [Dataset Structure 🏗](#dataset-structure-🏗)\n- [Sources ℹ️](#sources-ℹ️)\n- [Ideas 💡](#ideas-💡)\n- [Contributing 🙌](#contributing-🙌)\n- [Resources 📚](#resources-📚)\n\n---\n\n## Overview\n\nThe ***Basketball Dataset*** is an on-going project to assemble a wide variety of data concentrated in the domain of basketball. Prioritization occurred with respect to which data is collected and added to this dataset first. Since I have found a reliable, robust source of ***National Basketball Association*** (**NBA**) data via a ***Python***-based API, first efforts are being concentrated to extract as much data as possible via this source. However, I hope that this dataset can grow to include ***NCAA***, international leagues, and other basketball-related data and contributions are certainly welcome. \n\nAny type of file can be added to the dataset provided two qualifications are met:\n1. The data is related to the basketball domain in some explainable way and includes the explanation.\n2. The data is clean and organized in agreeance with data already collected (an explanation of this organization can be found below in the [Dataset Structure 🏗](#dataset-structure-🏗) section).\n\nContinue reading for more about the ***Basketball Dataset***!\n\n---\n\n## Motivation 🏆 🥇 💪 \n\nSports analytics is an awesome field, and to derive good analysis requires good data. This project is an attempt to collect as much data on ***basketball*** as ***Kaggle*** will allow in an organized, useful manner. The creator of this dataset hopes to use it as a springboard to continue projects in [***sports analytics***](https://github.com/wyattowalsh/sports-analytics) and especially [***basketball-related projects***](https://github.com/wyattowalsh/sports-analytics/tree/main/basketball).\n\n---\n\n## Dataset Structure 🏗\n\n### Overview of Dataset Structure\n\n***Kaggle*** offers many formats of which one can save files to a dataset, which include: `CSV`, `JSON`, `SQLite`, and `Archives`, among others. The platform essentially acts similarly to industrial cloud solutions like *Google Cloud Platform's* (**GCP**) ***Cloud Storage*** or *Amazon Web Service's* (**AWS**) ***S3*** albeit with a **100GB** storage capacity. ***Kaggle*** datasets as well as these industrial solutions can be considered as broad object/file storage and in certain data engineering paradigms can serve as data lakes. \n\nIt seems that many state-of-the-art (SOTA) data storage solutions pivot around an organizational-wide data lake (of which itself allows for general object storage) that has multiple inputs (*\"tributaries\"*) both streaming into and routinely added to the overall lake. One benefit of this paradigm is that the lake facilitates the storage of both structured (tabular) and unstructured (image, video, audio, text, etc) data. This can prove useful because, as time progresses, new techniques for extracting useful information from unstructured data can be utilized. Thus it also seems like a good idea to hold onto all extracted data, if possible. \n\n***Kaggle*** datasets can serve as data lakes through the archival process or simply by storing data files in their raw file format. This certainly serves as a strong foundation for building a — one day in the future — <b><i>\"big data\"</i></b> collection. \n\nHowever, there is further work that can be done in configuring ***Kaggle*** datasets to enable additional platform functionality as well as improved storage efficiency. Structured data, whether structured upon extraction or structured through some pre-processing, can be stored in a ***SQLite*** database (`.sqlite` file type) as opposed to storing individual files such as `CSVs` or `JSONs` within the dataset. Thus, a single database file is stored as an object within the dataset, enabling additional functionality. One easily discerned advantage with storing in ***SQLite*** is that histograms of the distribution of across continuous variables are given directly within ***Kaggle***. \n\nAs this project moves forward, I hope to collect a large collection of both structured and unstructured data. I hope that the ***SQLite*** database (`basketball.sqlite`) can serve to house the structured data in an efficient, useful format, similarly to the [***European Soccer Database***](https://www.kaggle.com/hugomathien/soccer)\n\n### Structured Data\n\nAll structured data is contained within `basketball.sqlite`. All tables have included overall and column-wise descriptions\n\n---\n\n## Sources ℹ️\n\n- stats.nba.com via [nba_api](https://github.com/swar/nba_api)\n\n---\n\n## Ideas 💡\n\n- Player Amenities in Associated Cities\n- Team Staffing\n- Stadium Amenities\n- Socioeconomics of Associated Cities\n- NBA Memes\n- Reddit.com/r/NBA \n- News Articles (including social media)\n- 2K/Video Game \n\n## Resources \n\n### Technical Resources\n\n#### Computing\n\n- [Google Colaboratory](https://colab.research.google.com/)\n\n#### Data Collection \n\n- [nba_api](https://github.com/swar/nba_api)\n\n---\nBuilt with: \n<img alt=\"Google Colab\" src=\"https://img.shields.io/badge/googlecolab%20-%23F9AB00.svg?&style=for-the-badge&logo=Google-Colab&logoColor=white\"> <img alt=\"Python\" src=\"https://img.shields.io/badge/python%20-%2314354C.svg?&style=for-the-badge&logo=python&logoColor=white\"> <img alt=\"SQLite\" src=\"https://img.shields.io/badge/sqlite%20-%23003B57.svg?&style=for-the-badge&logo=sqlite&logoColor=white\"> <img alt=\"Kaggle\" src=\"https://img.shields.io/badge/kaggle%20-%2320BEFF.svg?&style=for-the-badge&logo=kaggle&logoColor=white\">\n---",
+    "isPrivate": false,
+    "licenses": [{"name": "CC-BY-SA-4.0"}],
+    "resources": [
     {
-      "name": "unknown"
+    	"path": "basketball.sqlite",
+    	"description": "SQLite database for relational data of the ***Basketball Dataset***",
     }
-  ], 
-  "id": "wyattowalsh/basketball", 
-  "title": "Basketball Dataset"
+    {
+    	"path": "basketball.sqlite/Player",
+    	"description": "Basic player information",
+    	"schema": {
+	        "fields": [
+	          {
+	            "name": "id",
+	            "description": "Player's id number used throughout the db",
+	            "type": "string"
+	          },
+	          {
+	            "name": "full_name",
+	            "description": "Player's full name",
+	            "type": "string"
+	          },
+	          {
+	            "name": "first_name",
+	            "description": "Player's first name",
+	            "type": "string"
+	          },
+	          {
+	            "name": "last_name",
+	            "description": "Player's last name",
+	            "type": "string"
+	          },
+	          {
+	            "name": "is_active",
+	            "description": "Boolean for whether the player is currently active",
+	            "type": "boolean"
+	          },
+	        ]
+      	}
+    }
+    {
+    	"path": "basketball.sqlite/Team",
+    	"description": "Basic team information",
+    	"schema": {
+	        "fields": [
+	          {
+	            "name": "id",
+	            "description": "Team's id number used throughout the db",
+	            "type": "string"
+	          },
+	          {
+	            "name": "full_name",
+	            "description": "Team's full name",
+	            "type": "string"
+	          },
+	          {
+	            "name": "abbreviation",
+	            "description": "Team's abbreviation",
+	            "type": "string"
+	          },
+	          {
+	            "name": "nickname",
+	            "description": "Team's nickname",
+	            "type": "string"
+	          },
+	          {
+	            "name": "city",
+	            "description": "Team's city",
+	            "type": "string"
+	          },
+	          {
+	            "name": "state",
+	            "description": "Team's state",
+	            "type": "string"
+	          },
+	          {
+	            "name": "year_founded",
+	            "description": "Year team founded",
+	            "type": "datetime"
+	          },
+	        ]
+      	}
+    }
+    {
+    	"path": "basketball.sqlite/Player_Attributes",
+    	"description": "SQLite table for basic team information",
+    	"schema": {
+	        "fields": [
+	          {
+	            "name": "id",
+	            "description": "Player's id number used throughout the db",
+	            "type": "string"
+	          },
+	          {
+	            "name": "FIRST_NAME",
+	            "description": "Player's first name",
+	            "type": "string"
+	          },
+	          {
+	            "name": "LAST_NAME",
+	            "description": "Player's last name",
+	            "type": "string"
+	          },
+	          {
+	            "name": "DISPLAY_FIRST_LAST",
+	            "description": "Team's nickname",
+	            "type": "string"
+	          },
+	          {
+	            "name": "DISPLAY_LAST_COMMA_FIRST",
+	            "description": "Team's city",
+	            "type": "string"
+	          },
+	          {
+	            "name": "DISPLAY_LAST_COMMA_FIRST",
+	            "description": "Team's state",
+	            "type": "string"
+	          },
+	          {
+	            "name": "DISPLAY_FI_LAST",
+	            "description": "Year team founded",
+	            "type": "datetime"
+	          },
+	          {
+	            "name": "PLAYER_SLUG",
+	            "description": "Player's last name",
+	            "type": "string"
+	          },
+	          {
+	            "name": "BIRTHDATE",
+	            "description": "Team's nickname",
+	            "type": "string"
+	          },
+	          {
+	            "name": "SCHOOL",
+	            "description": "Team's city",
+	            "type": "string"
+	          },
+	          {
+	            "name": "COUNTRY",
+	            "description": "Team's state",
+	            "type": "string"
+	          },
+	          {
+	            "name": "LAST_AFFILIATION",
+	            "description": "Year team founded",
+	            "type": "datetime"
+	          },
+	          {
+	            "name": "HEIGHT",
+	            "description": "Player's last name",
+	            "type": "string"
+	          },
+	          {
+	            "name": "WEIGHT",
+	            "description": "Team's nickname",
+	            "type": "string"
+	          },
+	          {
+	            "name": "SEASON_EXP",
+	            "description": "Team's city",
+	            "type": "string"
+	          },
+	          {
+	            "name": "JERSEY",
+	            "description": "Team's state",
+	            "type": "string"
+	          },
+	          {
+	            "name": "POSITION",
+	            "description": "Year team founded",
+	            "type": "datetime"
+	          },
+	          {
+	            "name": "ROSTERSTATUS",
+	            "description": "Player's id number used throughout the db",
+	            "type": "string"
+	          },
+	          {
+	            "name": "TEAM_ID",
+	            "description": "Player's first name",
+	            "type": "string"
+	          },
+	          {
+	            "name": "TEAM_NAME",
+	            "description": "Player's last name",
+	            "type": "string"
+	          },
+	          {
+	            "name": "TEAM_ABBREVIATION",
+	            "description": "Team's nickname",
+	            "type": "string"
+	          },
+	          {
+	            "name": "TEAM_CODE",
+	            "description": "Team's city",
+	            "type": "string"
+	          },
+	          {
+	            "name": "TEAM_CITY",
+	            "description": "Team's state",
+	            "type": "string"
+	          },
+	          {
+	            "name": "PLAYERCODE",
+	            "description": "Year team founded",
+	            "type": "datetime"
+	          },
+	          {
+	            "name": "FROM_YEAR",
+	            "description": "Player's last name",
+	            "type": "string"
+	          },
+	          {
+	            "name": "TO_YEAR",
+	            "description": "Team's nickname",
+	            "type": "string"
+	          },
+	          {
+	            "name": "DLEAGUE_FLAG",
+	            "description": "Team's city",
+	            "type": "string"
+	          },
+	          {
+	            "name": "NBA_FLAG",
+	            "description": "Team's state",
+	            "type": "string"
+	          },
+	          {
+	            "name": "GAMES_PLAYED_FLAG",
+	            "description": "Year team founded",
+	            "type": "datetime"
+	          },
+	          {
+	            "name": "DRAFT_YEAR",
+	            "description": "Player's last name",
+	            "type": "string"
+	          },
+	          {
+	            "name": "DRAFT_ROUND",
+	            "description": "Team's nickname",
+	            "type": "string"
+	          },
+	          {
+	            "name": "DRAFT_NUMBER",
+	            "description": "Team's city",
+	            "type": "string"
+	          },
+	          {
+	            "name": "PTS",
+	            "description": "Team's state",
+	            "type": "string"
+	          },
+	          {
+	            "name": "AST",
+	            "description": "Year team founded",
+	            "type": "datetime"
+	          },
+	          {
+	            "name": "REB",
+	            "description": "Team's state",
+	            "type": "string"
+	          },
+	          {
+	            "name": "PIE",
+	            "description": "Year team founded",
+	            "type": "datetime"
+	          }
+	        ]
+      	}
+    }
+    // {
+    // 	"path": "basketball.sqlite/Team_Attributes",
+    // 	"description": "SQLite table for team attributes",
+    // 	"schema": {
+	   //      "fields": [
+	   //        {
+	   //          "name": "id",
+	   //          "description": "Player's id number used throughout the db",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "ABBREVIATION",
+	   //          "description": "Player's first name",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "NICKNAME",
+	   //          "description": "Player's last name",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "YEARFOUNDED",
+	   //          "description": "Team's nickname",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "CITY",
+	   //          "description": "Team's city",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "ARENA",
+	   //          "description": "Team's state",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "ARENACAPACITY",
+	   //          "description": "Year team founded",
+	   //          "type": "datetime"
+	   //        },
+	   //        {
+	   //          "name": "OWNER",
+	   //          "description": "Player's last name",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "GENERALMANAGER",
+	   //          "description": "Team's nickname",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "HEADCOACH",
+	   //          "description": "Team's city",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "DLEAGUEAFFILIATION",
+	   //          "description": "Team's state",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "YEARFOUNDED",
+	   //          "description": "Year team founded",
+	   //          "type": "datetime"
+	   //        },
+	   //        {
+	   //          "name": "YEARACTIVETILL",
+	   //          "description": "Player's last name",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "WEIGHT",
+	   //          "description": "Team's nickname",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "SEASON_EXP",
+	   //          "description": "Team's city",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "JERSEY",
+	   //          "description": "Team's state",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "POSITION",
+	   //          "description": "Year team founded",
+	   //          "type": "datetime"
+	   //        },
+	   //        {
+	   //          "name": "ROSTERSTATUS",
+	   //          "description": "Player's id number used throughout the db",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "TEAM_ID",
+	   //          "description": "Player's first name",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "TEAM_NAME",
+	   //          "description": "Player's last name",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "TEAM_ABBREVIATION",
+	   //          "description": "Team's nickname",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "TEAM_CODE",
+	   //          "description": "Team's city",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "TEAM_CITY",
+	   //          "description": "Team's state",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "PLAYERCODE",
+	   //          "description": "Year team founded",
+	   //          "type": "datetime"
+	   //        },
+	   //        {
+	   //          "name": "FROM_YEAR",
+	   //          "description": "Player's last name",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "TO_YEAR",
+	   //          "description": "Team's nickname",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "DLEAGUE_FLAG",
+	   //          "description": "Team's city",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "NBA_FLAG",
+	   //          "description": "Team's state",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "GAMES_PLAYED_FLAG",
+	   //          "description": "Year team founded",
+	   //          "type": "datetime"
+	   //        },
+	   //        {
+	   //          "name": "DRAFT_YEAR",
+	   //          "description": "Player's last name",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "DRAFT_ROUND",
+	   //          "description": "Team's nickname",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "DRAFT_NUMBER",
+	   //          "description": "Team's city",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "PTS",
+	   //          "description": "Team's state",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "AST",
+	   //          "description": "Year team founded",
+	   //          "type": "datetime"
+	   //        },
+	   //        {
+	   //          "name": "REB",
+	   //          "description": "Team's state",
+	   //          "type": "string"
+	   //        },
+	   //        {
+	   //          "name": "PIE",
+	   //          "description": "Year team founded",
+	   //          "type": "datetime"
+	   //        }
+	   //      ]
+    //   	}
+    }
+  ],
+    "keywords": [
+        "basketball",
+        "sports",
+        "tabular data",
+        "sql",
+        "categorical data"
+
+    ],
+    "collaborators": []
 }
