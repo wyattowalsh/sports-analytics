@@ -1,5 +1,7 @@
 pip
+python
 ipykernel
+nb_conda
 jupyter_contrib_nbextensions
 numpy
 pandas
@@ -13,4 +15,3 @@ cupy
 distributed
 dask
 pyngrok
-nba_api
