@@ -1,5 +1,4 @@
 ipykernel==5.5.0
-nb_conda==2.2.1
 jupyter_contrib_nbextensions==0.5.1
 numpy==1.20.1 
 pandas==1.2.3
