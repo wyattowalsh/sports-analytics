@@ -1,6 +1,5 @@
 pip
 ipykernel
-nb_conda
 jupyter_contrib_nbextensions
 numpy
 pandas
