@@ -7,8 +7,6 @@
 
 ---
 
----
-
 <h2 align='center'> Contents </h2>
 
 <br>
