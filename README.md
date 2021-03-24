@@ -3,9 +3,12 @@
 
 ---
 
-
+<img src="https://unsplash.com/photos/hZFXVjeS73A/download?force=true">
 
 ---
+
+<h2 align='center'> Contents </h2>
+
 <br>
 <p align="center">
   |
@@ -21,10 +24,20 @@
 
 ## Motivation
 
+---
+
 ## Explanation of Repository Contents
+
+---
 
 ## Overview 
 
+---
+
 ## Current Domains of Interest
 
+---
+
 ## Resources
+
+---
