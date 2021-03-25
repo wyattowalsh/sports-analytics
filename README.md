@@ -25,13 +25,13 @@
 
 #### Welcome to my *sports analytics* repository!!
 
-Here you can find associated my associated projects, notes, and other work within the sports analytics domain.
+##### Here you can find associated my associated projects, notes, and other work within the sports analytics domain.
 
 ---
 
 ## Explanation of Repository Contents
 
-The repository is organized such that there is a `README.md` associated with each major directory that explains the contents of that directory.
+Currently, the repository is arranged such that different sports of interest each have their own directory as well as a directory for ***sports analytics*** resources, and project dependencies. Project dependencies is located within the root because there repo-wide dependencies as well as project-wide dependencies. Each major subdirector within the repository is outfitted with `README.md` file which goes into greater detail about the contents of a certain subdirectory.
 
 ---
 
