@@ -7,43 +7,29 @@
 
 ---
 
-<h2 align='center'> Contents </h2>
+## Welcome to my *sports analytics* repository!!
 
-<br>
-<p align="center">
-  |
-  <a href=#overview>Overview</a> |
-  <a href=#explanation-of-repository-contents>Explanation of Repository Contents</a>  |
-  <a href=#current-domains-of-interest>Current Domains of Interest</a> |
-  <a href=#resources>Resources</a> |
-  <br><br>
-</p>
-
----
-
-## Overview 
-
-#### Welcome to my *sports analytics* repository!!
-
-Here you can find associated my associated projects, notes, and other work within the sports analytics domain.
+### Here, you can find my associated projects, notes, and other work within the domain of sports analytics.
 
 ---
 
 ## Explanation of Repository Contents
 
-The repository is organized such that there is a `README.md` associated with each major directory that explains the contents of that directory.
+Currently, the repository is arranged such that different sports of interest each have their own directory as well as a directory for ***sports analytics*** resources, and project dependencies. Project dependencies is located within the root because there repo-wide dependencies as well as project-wide dependencies. Each major subdirector within the repository is outfitted with `README.md` file which goes into greater detail about the contents of a certain subdirectory.
+
+Feel free to browse the full extent of the repository using the index below, or by simply navigating through the directories.
 
 ---
 
-## Current Domains of Interest
+### Repository Index 
 
-### Basketball
-
-### Soccer/Futbol
-
----
-
-## Resources
+- [Basketball](https://github.com/wyattowalsh/sports-analytics/tree/main/basketball)
+  - [Data](https://github.com/wyattowalsh/sports-analytics/tree/main/basketball/data)
+  - [Notebooks](https://github.com/wyattowalsh/sports-analytics/tree/main/basketball/notebooks)
+- [Soccer](https://github.com/wyattowalsh/sports-analytics/tree/main/soccer)
+  - [Notebooks](https://github.com/wyattowalsh/sports-analytics/tree/main/soccer/notebooks)
+- [Sports Analytics Resources](https://github.com/wyattowalsh/sports-analytics/tree/main/resources)
+- [Project Dependencies](https://github.com/wyattowalsh/sports-analytics/tree/main/dependencies)
 
 ---
 
