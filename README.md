@@ -7,12 +7,9 @@
 
 ---
 
+## Welcome to my *sports analytics* repository!!
 
-## Overview 
-
-#### Welcome to my *sports analytics* repository!!
-
-##### Here you can find associated my associated projects, notes, and other work within the sports analytics domain.
+### Here, you can find my associated projects, notes, and other work within the domain of sports analytics.
 
 ---
 
