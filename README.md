@@ -22,6 +22,8 @@ Currently, the repository is arranged such that different sports of interest eac
 
 Feel free to browse the full extent of the repository using the index below, or by simply navigating through the directories.
 
+---
+
 ### Repository Index 
 
 - [Basketball](https://github.com/wyattowalsh/sports-analytics/tree/main/basketball)
