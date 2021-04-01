@@ -4,7 +4,7 @@ name: Update Kaggle Basketball Dataset
 # Controls when the action will run. 
 on:
   schedule:
-  - cron: "0 0 * * *"
+  - cron: "15 3 * * *"
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
