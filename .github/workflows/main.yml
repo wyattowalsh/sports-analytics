@@ -28,7 +28,7 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r ./dependencies/basketball/update_data.txt
       - name: Run kernelpipes
-        env:
+         env:
 +          KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
 +          KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
         run: kernelpipes basketball/utilities/pipeline.yml
