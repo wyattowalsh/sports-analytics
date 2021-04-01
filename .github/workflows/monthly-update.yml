@@ -1,5 +1,5 @@
 # action to update my kaggle basketball dataset (see more here https://www.kaggle.com/wyattowalsh/basketball)
-name: Update Kaggle Basketball Dataset - Teams & Players - Monthly Updates 
+name: Update Kaggle Basketball Dataset - Monthly
 
 # Controls when the action will run. 
 on:
@@ -30,4 +30,4 @@ jobs:
         env:
            KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
            KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
-        run: kernelpipes basketball/utilities/team_player_pipeline.yml
+        run: kernelpipes basketball/utilities/monthly_pipeline.yml
