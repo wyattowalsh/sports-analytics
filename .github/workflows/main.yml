@@ -1,10 +1,10 @@
 # action to update my kaggle basketball dataset (see more here https://www.kaggle.com/wyattowalsh/basketball)
-name: Update Kaggle Basketball Dataset
+name: Update Kaggle Basketball Dataset - Teams & Players - Monthly Updates 
 
 # Controls when the action will run. 
 on:
   schedule:
-  - cron: "15 3 * * *"
+  - cron: "0 0 1 * *" # montly updates
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
 
@@ -14,7 +14,6 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-    environment: update-kaggle-basketball-dataset
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
@@ -31,4 +30,4 @@ jobs:
         env:
            KAGGLE_USERNAME: ${{ secrets.KAGGLE_USERNAME }}
            KAGGLE_KEY: ${{ secrets.KAGGLE_KEY }}
-        run: kernelpipes basketball/utilities/pipeline.yml
+        run: kernelpipes basketball/utilities/team_player_pipeline.yml
