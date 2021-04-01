@@ -1,7 +1,5 @@
 # Pipeline name
 name: Basketball Dataset Pipeline
-# Schedule job to run @ 3:15am
-schedule: "15    3     *     *     *"
 # Pipeline execution steps
 steps:
 # check for new teams or players
