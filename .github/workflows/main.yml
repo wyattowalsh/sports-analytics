@@ -1,6 +1,8 @@
 # action to update my kaggle basketball dataset (see more here https://www.kaggle.com/wyattowalsh/basketball)
 name: Update Kaggle Basketball Dataset
 
+environment: update-kaggle-basketball-dataset
+
 # Controls when the action will run. 
 on:
   schedule:
