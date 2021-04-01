@@ -1,12 +1,2 @@
 name: Basketball Dataset Pipeline - Daily Updates # Pipeline name
 steps:
-  # retrieve queries to update teams & players lists (if needed)
-  - kernel: wyattowalsh/basketball-dataset-update-teams
-  - kernel: wyattowalsh/basketball-dataset-update-players
-  - status: 1s
-  # write queries to database
-  - kernel: wyattowalsh/basketball-dataset-infrequent-updates
-  - status: 1s
-  # update team details
-  - kernel: wyattowalsh/basketball-dataset-update-team-details
-  - status: 1s
