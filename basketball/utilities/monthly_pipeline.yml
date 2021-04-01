@@ -1,4 +1,3 @@
 name: Basketball Dataset Pipeline - Montly Update # Pipeline name
 steps:
   - kernel: wyattowalsh/basketball-dataset-monthly-update-executor
-  - status: 1s
