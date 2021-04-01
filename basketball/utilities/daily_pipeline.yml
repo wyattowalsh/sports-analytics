@@ -1,4 +1,4 @@
-name: Basketball Dataset Pipeline # Pipeline name
+name: Basketball Dataset Pipeline - Daily Updates # Pipeline name
 steps:
   # retrieve queries to update teams & players lists (if needed)
   - kernel: wyattowalsh/basketball-dataset-update-teams
