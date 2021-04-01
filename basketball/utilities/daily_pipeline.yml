@@ -1,2 +1,3 @@
-name: Basketball Dataset Pipeline - Daily Updates # Pipeline name
+name: Basketball Dataset Pipeline - Daily Updates
 steps:
+  - kernel: wyattowalsh/basketball-dataset-daily-update-executor
