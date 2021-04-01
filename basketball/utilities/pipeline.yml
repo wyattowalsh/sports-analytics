@@ -1,0 +1,12 @@
+# Pipeline name
+name: Basketball Dataset Pipeline
+# Schedule job to run @ 3:15am
+schedule: "15    3     *     *     *"
+# Pipeline execution steps
+steps:
+# check for new teams or players
+  - kernel: wyattowalsh/basketball-dataset-update-teams
+  - kernel: wyattowalsh/basketball-dataset-update-players
+  - status: 15s
+# get additional team/player information
+#   - kernel: wyattowalsh/basketball-dataset-update-teams
