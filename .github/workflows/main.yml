@@ -1,8 +1,6 @@
 # action to update my kaggle basketball dataset (see more here https://www.kaggle.com/wyattowalsh/basketball)
 name: Update Kaggle Basketball Dataset
 
-environment: update-kaggle-basketball-dataset
-
 # Controls when the action will run. 
 on:
   schedule:
@@ -16,7 +14,7 @@ jobs:
   build:
     # The type of runner that the job will run on
     runs-on: ubuntu-latest
-
+    environment: update-kaggle-basketball-dataset
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
