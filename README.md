@@ -28,7 +28,7 @@ Feel free to browse the full extent of the repository using the index below, or 
   - [Notebooks](https://github.com/wyattowalsh/sports-analytics/tree/main/basketball/notebooks)
 - [Soccer](https://github.com/wyattowalsh/sports-analytics/tree/main/soccer)
   - [Notebooks](https://github.com/wyattowalsh/sports-analytics/tree/main/soccer/notebooks)
-- [Sports Analytics Resources](https://github.com/wyattowalsh/sports-analytics/tree/main/resources)
+- [Sports Analytics Resources](https://github.com/wyattowalsh/sports-analytics/blob/main/resources.md)
 - [Project Dependencies](https://github.com/wyattowalsh/sports-analytics/tree/main/dependencies)
 
 ---
