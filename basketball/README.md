@@ -1,5 +1,6 @@
 <h1 align='center'> Basketball </h1> 
 
+<h3 align='center'> See the project's dataset here: &nbsp; <a href="https://www.kaggle.com/wyattowalsh/basketball" target="_blank"><img alt="Kaggle" src="https://img.shields.io/badge/kaggle-%2320BEFF.svg?&style=for-the-badge&logo=kaggle&logoColor=white" /></a><br></h3>
 <img src="https://unsplash.com/photos/EsDKfKpalK4/download?force=true">
 
 <h2 align='center'> Contents </h2>
